@@ -19,7 +19,11 @@ public class ED1T2P {
 	}
 	public static double funcionMagica(int a) {
 		double r;
-		r = a/(((((((a*2.0)*5.0)*3.0)/2.0)/5.0)/3.0)-a);
+		r = (((((((a*2.0)*5.0)*3.0)/2.0)/5.0)/3.0)-a)+1;
 		return r;
 	}
 }
+//Breakpoint en la línea 16.
+//Si introducimos la operación de la función mágica por partes como expresiones al
+//final veremos que la operación en paréntesis grande da cero y dividir por cero da error.
+//Solución: quitar la división y sumar uno.

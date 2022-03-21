@@ -26,3 +26,7 @@ public class ED1T4P {
 
 	}
 }
+//Breakpoint en la línea 12.
+//Estamos ante un bucle infinito porque el valor que disminuye es menor que el que aumenta
+//así que el iterador siempre será mayor que cero.
+//Una posible solución sería cambiar la condición del while o añadir condicionales dentro del while.

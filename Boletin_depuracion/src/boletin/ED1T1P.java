@@ -11,10 +11,15 @@ public class ED1T1P {
 		int contador=0;
 		veces = rnd.nextInt(100)+1;
 		for(int i = 0; i<veces;i++) {
-			contador = 0;
 			System.out.println(rnd.nextInt(50));
 			contador++;
 		}
 		System.out.println("Se han generado "+contador+" números aleatorios");
 	}
 }
+
+// Ponemos un breakpoint en la línea 13 para parar la ejecución en el bucle.
+// Nos muestra la variables arg, veces, contador e i.
+// Obervamos que el problema es que cada vuelta del bucle se reinicia el contador a 0
+// así que el resultado final siempre será 1.
+// Solución: quitar la línea 14 (contador = 0).

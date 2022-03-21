@@ -10,11 +10,16 @@ public class ED1T3P {
 		while(i<100) {
 			if(i%2==0) {
 				System.out.println("Par");
-				i++;
 			} else {
 				System.out.println("Impar");
-				i--;
 			}
+			i++;
 		}
 	}
 }
+//Ponemos un breakpoint en la línea 10 para parar en el bucle.
+//Vemos que la variable i va variando entre 1 y 0 indefinidamente porque cuando vale 0
+//va al condicional que le suma 1 y cuando vale uno va al else que le resta uno,
+//así que nunca va a valer más de 100 y detenerse el bucle.
+//Solución: sacar la línea 13 (i++;) para ponerla despúes del else y eliminar la 
+//línea 16 (i--;)
