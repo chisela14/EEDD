@@ -1,6 +1,6 @@
-//3. Tercer programa: contador de número pares e impares
-//El programa muestra par o impar, unas 100 veces dependiendo del valor de la variable “i” del
-//bucle while. El bucle es infinito. ¿Cómo resolverlo? ¿Qué le ocurre a la variable “i”?
+//3. Tercer programa: contador de nï¿½mero pares e impares
+//El programa muestra par o impar, unas 100 veces dependiendo del valor de la variable ï¿½iï¿½ del
+//bucle while. El bucle es infinito. ï¿½Cï¿½mo resolverlo? ï¿½Quï¿½ le ocurre a la variable ï¿½iï¿½?
 
 package boletin;
 public class ED1T3P {
@@ -17,9 +17,16 @@ public class ED1T3P {
 		}
 	}
 }
-//Ponemos un breakpoint en la línea 10 para parar en el bucle.
+//Ponemos un breakpoint en la lï¿½nea 10 para parar en el bucle.
 //Vemos que la variable i va variando entre 1 y 0 indefinidamente porque cuando vale 0
 //va al condicional que le suma 1 y cuando vale uno va al else que le resta uno,
-//así que nunca va a valer más de 100 y detenerse el bucle.
-//Solución: sacar la línea 13 (i++;) para ponerla despúes del else y eliminar la 
-//línea 16 (i--;)
+//asï¿½ que nunca va a valer mï¿½s de 100 y detenerse el bucle.
+//Soluciï¿½n: sacar la lï¿½nea 13 (i++;) para ponerla despï¿½es del else y eliminar la 
+//lï¿½nea 16 (i--;)
+
+//breakpoint en el if
+//traza: i inicial, system out(par o impar), i final, i esperado
+//			0		par							1		1
+//			1		impar						0		2
+
+//probar hit count 99

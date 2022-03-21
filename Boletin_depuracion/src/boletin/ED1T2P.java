@@ -1,6 +1,6 @@
-//2. Segundo programa: función mágica
-//El programa lee un número por teclado y luego realiza una operación mágica para devolver un
-//resultado para mostrarlo por pantalla. El resultado esperado es “1”.
+//2. Segundo programa: funciï¿½n mï¿½gica
+//El programa lee un nï¿½mero por teclado y luego realiza una operaciï¿½n mï¿½gica para devolver un
+//resultado para mostrarlo por pantalla. El resultado esperado es ï¿½1ï¿½.
 
 package boletin;
 import java.io.BufferedReader;
@@ -11,7 +11,7 @@ public class ED1T2P {
 		int numero;
 		double resultado;
 		BufferedReader lectura = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Dame un número:");
+		System.out.println("Dame un nï¿½mero:");
 		numero= Integer.parseInt(lectura.readLine());
 		resultado = funcionMagica(numero);
 		System.out.println("El resultado obtenido es "+ resultado);
@@ -20,10 +20,15 @@ public class ED1T2P {
 	public static double funcionMagica(int a) {
 		double r;
 		r = (((((((a*2.0)*5.0)*3.0)/2.0)/5.0)/3.0)-a)+1;
+		//r = a/(((((((a*2.0)*5.0)*3.0)/2.0)/5.0)/3.0)-a)
 		return r;
 	}
 }
-//Breakpoint en la línea 16.
-//Si introducimos la operación de la función mágica por partes como expresiones al
-//final veremos que la operación en paréntesis grande da cero y dividir por cero da error.
-//Solución: quitar la división y sumar uno.
+//Breakpoint en la lï¿½nea 16.
+//Si introducimos la operaciï¿½n de la funciï¿½n mï¿½gica por partes como expresiones al
+//final veremos que la operaciï¿½n en parï¿½ntesis grande da cero y dividir por cero da error.
+//Soluciï¿½n: quitar la divisiï¿½n y sumar uno.
+
+//la parte de expressions es util porque nos sirve para evaluar y hacer pruebas
+//dividir entre cero con un double nos da infinito, pero con int o long saltaria exception
+//la traza seria suficiente con la expresion de la operacion que da cero

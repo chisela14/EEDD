@@ -1,6 +1,6 @@
-//1. Primer programa: contador números aleatorios
-//Este programa generará un número aleatorio de números aleatorios. Al final mostrará en cada
-//ejecución cuantos ha generado y los mostrará.
+//1. Primer programa: contador nï¿½meros aleatorios
+//Este programa generarï¿½ un nï¿½mero aleatorio de nï¿½meros aleatorios. Al final mostrarï¿½ en cada
+//ejecuciï¿½n cuantos ha generado y los mostrarï¿½.
 
 package boletin;
 import java.util.Random;
@@ -14,12 +14,15 @@ public class ED1T1P {
 			System.out.println(rnd.nextInt(50));
 			contador++;
 		}
-		System.out.println("Se han generado "+contador+" números aleatorios");
+		System.out.println("Se han generado "+contador+" nï¿½meros aleatorios");
 	}
 }
 
-// Ponemos un breakpoint en la línea 13 para parar la ejecución en el bucle.
-// Nos muestra la variables arg, veces, contador e i.
-// Obervamos que el problema es que cada vuelta del bucle se reinicia el contador a 0
-// así que el resultado final siempre será 1.
-// Solución: quitar la línea 14 (contador = 0).
+// Ponemos un breakpoint en la lï¿½nea 13 para parar la ejecuciï¿½n en el bucle.
+// Observamos que el problema es que cada vuelta del bucle se reinicia el contador a 0
+// asï¿½ que el resultado final siempre serï¿½ 1.
+// Soluciï¿½n: quitar la lï¿½nea 14 (contador = 0).
+
+//No es eficiente poner el breakpoint al inicio del mÃ©todo, hay que ponerlo donde nos de informaciÃ³n (contador).
+//El watchpoint solo funciona en atributos de clase.
+//La traza se puede hacer con capturas o un archivo de excel (poner variables y valores).
